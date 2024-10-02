@@ -1,0 +1,69 @@
+{
+    "artists": [
+        {
+            "id": 1,
+            "name": "Helen Tran",
+            "tags": [
+                "Leadership",
+                "Product",
+                "UX"
+            ],
+            "designation": "Lead Product Designer",
+            "image": "https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=546x680&vertical=center"
+        },
+        {
+            "id": 2,
+            "name": "Victa Wille",
+            "tags": [
+                "Web",
+                "Ui",
+                "Mobile"
+            ],
+            "designation": "Digital Designer",
+            "image": "https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=546x680&vertical=center"
+        },
+        {
+            "id": 3,
+            "name": "Elif Kamesoglu",
+            "tags": [
+                "Brand",
+                "Illustration",
+                "Web"
+            ],
+            "designation": "Brand Designer",
+            "image": "https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=546x680&vertical=center"
+        },
+        {
+            "id": 4,
+            "name": "Chris Owens",
+            "tags": [
+                "Illustration",
+                "Mobile",
+                "UI"
+            ],
+            "designation": "Creative Director",
+            "image": "https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?1685645250&format=webp&resize=546x680&vertical=center"
+        },
+        {
+            "id": 5,
+            "name": "Vladimir Gruev",
+            "tags": [
+                "Brand",
+                "Design"
+            ],
+            "designation": "Digital Designer",
+            "image": "https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=546x680&vertical=center"
+        },
+        {
+            "id": 6,
+            "name": "Aurelein Salomon",
+            "tags": [
+                "Mobile",
+                "Product",
+                "UX"
+            ],
+            "designation": "Design Director",
+            "image": "https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=546x680&vertical=center"
+        }
+    ]
+}

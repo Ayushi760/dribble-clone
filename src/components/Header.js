@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Header = () => {
     return (
-        <div style={{fontFamily:"Mono Sans"}} className='grid grid-cols-[1fr_96px_1fr] gap-[24px] px-10 h-[100px] justify-center items-center bg-[#f8f7f4]'>
+        <div style={{fontFamily:"Mono Sans"}} className='grid grid-cols-[1fr_96px_1fr] gap-[24px] px-10 h-[100px] justify-center items-center'>
             <div>
                 <ul className='flex flex-row text-[14px] gap-[32px] font-bold'>
                     <li className='flex gap-1 items-center'>Find Designers <FaAngleDown /></li>
@@ -17,7 +17,7 @@ const Header = () => {
                 <img src={dribbbleIcon} alt="Logo" className='h-24'/>
             </a>
             <div className='flex flex-row items-center justify-end gap-6 w-full'>
-                <div className="relative flex items-center flex-grow max-w-[200px]">
+                <div className="relative flex items-center">
                     <svg viewBox="0 0 24 24" aria-hidden="true" className="absolute left-4 w-4 h-4 fill-gray-500">
                         <g>
                             <path
@@ -32,10 +32,10 @@ const Header = () => {
                     />
                 </div>
                
-                <button className='ml-5 h-12 px-4 text-black font-semibold text-[14px]'>
+                <button className='h-12 px-4 text-black font-semibold text-[14px]'>
                     Log in
                 </button>
-                <button className='text-white bg-black h-12 rounded-full p-6 flex items-center'>
+                <button className='text-white bg-black h-12 rounded-full p-6 flex items-center text-[14px] font-semibold'>
                     Sign up
                 </button>
             </div>
