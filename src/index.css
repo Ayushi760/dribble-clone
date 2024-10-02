@@ -4,7 +4,7 @@
 
 /* styles.css */
 @font-face {
-  font-family: 'Mono Sans';
+  font-family: 'Mona Sans';
   src: url('../src/fonts/Mona-Sans.ttf') format('truetype');
 }
 
@@ -12,10 +12,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide {
-  margin: 0 10px; /* Adjust the gap as needed */
-}
-
-.slick-list {
-  margin: 0 -10px; /* Compensate for the slide margins */
-}

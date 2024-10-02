@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sourceserif4: ['Source Serif 4', 'sans-serif'],
-      },      
+        serif: ['"Source Serif 4"', 'Georgia', 'sans-serif'],
+      }     
     },
   },
   plugins: [],

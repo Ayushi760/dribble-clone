@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 const Hero = () => {
     const gradientColors = [
         '#e0d9e5',
@@ -27,19 +28,21 @@ const Hero = () => {
                     transition: 'background 1s ease',
                 }}
             >
-                <div className='text-[16px] font-semibold text-black' style={{ fontFamily: "Mono Sans" }}>
+                <div className='text-[16px] font-semibold text-black font-serif'>
                     Over 3 million ready-to-work creatives!
                 </div>
             </div>
-            <h1 className='flex items-center flex-col mx-10 max-w-[870px] text-center text-[72px] leading-[76px] my-[24px] tracking-[-0.5px] font-[400px]' style={{ fontFamily: 'Source Serif 4, sans-serif' }}>
-                The world's destination for design
-            </h1>
-            <div className='text-[20px] leading-[36px] font-[500px]' style={{ fontFamily: "Mono Sans" }}>
+            <div className='flex items-center flex-col mx-10 max-w-[870px] text-center text-[78px] leading-[76px] mt-[32px] mb-6 tracking-[2px] font-semibold font-serif'>
+                The world’s destination for design
+            </div>
+            <div className='text-[20px] leading-[36px] font-[500px]' style={{ fontFamily: "Mona Sans" }}>
                 Get inspired by the work of millions of top-rated designers & agencies around the world.
             </div>
-            <button className='text-white bg-black h-14 rounded-full p-6 flex items-center text-[14px] mt-8 font-semibold'>
+            <Link to="/register">
+                <button className='text-white bg-black h-14 rounded-full p-6 flex items-center text-[14px] mt-8 font-semibold' style={{ fontFamily: "Mona Sans" }}>
                     Get started
-            </button>
+                </button>
+            </Link>
         </div>
     );
 };

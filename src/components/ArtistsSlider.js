@@ -23,7 +23,7 @@ const ArtistsSlider = () => {
         speed: 5000, 
         slidesToShow: 5, 
         slidesToScroll: 1, 
-        autoplay: false, 
+        autoplay: true, 
         autoplaySpeed: 500,
         cssEase:'linear',
         pauseOnHover: false,
@@ -46,19 +46,15 @@ const ArtistsSlider = () => {
     };
 
     return (
-        <div className="py-[72px]">
+        <div className="py-[72px] overflow-hidden " style={{ fontFamily: "Mona Sans" }}> 
             <Slider {...settings}>
                 {artists.map((item,index) => (
                     <div
                         key={item.id}
-                        className="relative w-[273px] h-[340px] rounded-[32px] overflow-hidden shadow-lg"
-                        style={{
-                            backgroundImage: `url(${item.image})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                        }}
+                        className="relative max-w-[273px] h-[340px] rounded-[32px] overflow-hidden shadow-lg"
                     >
-                        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4 text-[14px]">
+                        <img src={item.image} className='w-full h-full'/>
+                        <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-end p-4 text-[14px]">
                             <h2 className="text-white font-bold">{item.name}</h2>
                             <p className="text-white">{item.designation}</p>
                             <div className="flex flex-wrap mt-2">
