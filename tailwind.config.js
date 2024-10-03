@@ -4,6 +4,12 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ['"Source Serif 4"', 'Georgia', 'sans-serif'],
+      },
+      screens:{
+        laptop:'1025px',
+        laptop_sm:'950px',
+        tablet:'768px',
+        mobile:'425px'
       }     
     },
   },

@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import { GlobalStateContext } from "../context/GlobalStateContext";
 import dribbbleIcon from "../assets/dribbble.svg";
+import hamburger from "../assets/hamburger.svg"
 import { FaAngleDown } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -13,12 +15,16 @@ const Header = () => {
 
   return (
     <div
-      style={{ fontFamily: "Mona Sans" }}
-      className="grid grid-cols-[1fr_96px_1fr] gap-[24px] px-10 h-[100px] justify-center items-center bg-[#f8f7f4]"
+      style={{ fontFamily: "Mona-Sans" }}
+      className="grid grid-cols-[1fr_96px_1fr] max-laptop:grid-cols-[90px_1fr_auto] max-laptop_sm:grid-cols-[20px_90px_1fr] max-laptop:gap-[24px] gap-[40px] px-10 h-[100px] justify-center items-center bg-[#f8f7f4]"
     >
-      <div>
-        <ul className="flex flex-row text-[14px] gap-[32px] font-bold">
-          <li className="flex gap-1 items-center">
+      <img src={hamburger} alt="hamburger" className="hidden max-w-8 max-laptop_sm:block"/>
+      <a href="" className="hidden max-laptop:block">
+        <img src={dribbbleIcon} alt="Logo" className="h-24" />
+      </a>
+      <div className="block max-laptop_sm:hidden">
+        <ul className="flex flex-row text-[14px] gap-[32px] max-laptop:gap-4 font-bold">
+          <li className="flex items-center gap-1">
             Find Designers <FaAngleDown />
           </li>
           <li>Inspiration</li>
@@ -26,15 +32,15 @@ const Header = () => {
           <li>Go Pro</li>
         </ul>
       </div>
-      <a href="/">
+      <a href="/" className="block max-laptop:hidden">
         <img src={dribbbleIcon} alt="Logo" className="h-24" />
       </a>
-      <div className="flex flex-row items-center justify-end gap-6 w-full">
-        <div className="relative flex items-center">
+      <div className="flex flex-row items-center justify-end w-full gap-6 max-laptop:gap-4">
+        <div className="relative flex items-center max-laptop:hidden">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            className="absolute left-4 w-4 h-4 fill-gray-500"
+            className="absolute w-4 h-4 left-4 fill-gray-500"
           >
             <g>
               <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
@@ -46,7 +52,7 @@ const Header = () => {
             placeholder="Search"
           />
         </div>
-
+        <FiSearch className="hidden max-laptop_sm:block max-laptop:block max-laptop:text-xl" />
         {state.isAuthenticated ? (
           <div className="flex items-center gap-4">
             <span className="text-black font-semibold text-[14px]">
@@ -61,12 +67,12 @@ const Header = () => {
           </div>
         ) : (
           <>
-          <Link to="/login">
-            <button className="h-12 px-4 text-black font-semibold text-[14px]">
-              Log in
-            </button>
-          </Link>
-            <button className="text-white bg-black h-12 rounded-full p-6 flex items-center">
+            <Link to="/login">
+              <button className="h-12 px-4 text-black font-semibold text-[14px] block max-laptop_sm:hidden">
+                Log in
+              </button>
+            </Link>
+            <button className="flex items-center h-12 p-6 text-white bg-black rounded-full text-nowrap">
               Sign up
             </button>
           </>

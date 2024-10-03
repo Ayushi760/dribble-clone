@@ -1,7 +1,7 @@
 {
   "artists": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Helen Tran",
       "tags": [
         "Leadership",
@@ -12,7 +12,7 @@
       "image": "https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=546x680&vertical=center"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Victa Wille",
       "tags": [
         "Web",
@@ -23,7 +23,7 @@
       "image": "https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=546x680&vertical=center"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Elif Kamesoglu",
       "tags": [
         "Brand",
@@ -34,7 +34,7 @@
       "image": "https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=546x680&vertical=center"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Chris Owens",
       "tags": [
         "Illustration",
@@ -45,7 +45,7 @@
       "image": "https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?1685645250&format=webp&resize=546x680&vertical=center"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Vladimir Gruev",
       "tags": [
         "Brand",
@@ -55,7 +55,7 @@
       "image": "https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=546x680&vertical=center"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Aurelein Salomon",
       "tags": [
         "Mobile",
@@ -68,18 +68,25 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "fullname": "Ayushi",
       "username": "ayushi16",
       "email": "ayushisaxena1610@gmail.com",
       "password": "$2a$10$3EMAyU0XCYWnGXRepy63TOgADFSCp0fgrkm3niNqZzq092IxeB5Iy"
     },
     {
-      "id": 2,
+      "id": "2",
       "fullname": "Shraddha",
       "username": "shraddha14",
       "email": "shraddha@gmail.com",
       "password": "$2a$10$RxVKSKDsBHgg2vmlCT0FuOpkuWWt/A7x5HIllpjzzWSvsZ.hnuGoC"
+    },
+    {
+      "id": 3,
+      "fullname": "Neeraj",
+      "username": "neeraj30",
+      "email": "neeraj@gmail.com",
+      "password": "$2a$10$OgUZ6vki/3nySObmUs8gb.Czvd.coeNzOW9NBjPWiBihmhU5ju.pi"
     }
   ]
 }
