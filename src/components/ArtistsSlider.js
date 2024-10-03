@@ -67,7 +67,7 @@ const ArtistsSlider = () => {
                         key={item.id}
                         className="relative max-w-[273px] h-[340px] max-laptop_sm:max-w-[220px] max-laptop_sm:h-[280px] rounded-[32px] overflow-hidden shadow-lg"
                     >
-                        <img src={item.image} className='w-full h-full'/>
+                        {item?.name === "Helen Tran" || item?.name === "Jesse Showalter" ? <video muted autoPlay loop src={item?.image} className='object-cover w-full h-full'></video>:<img src={item.image} className='w-full h-full'/>}
                         <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-end p-4 text-[14px]">
                             <h2 className="font-bold text-white">{item.name}</h2>
                             <p className="text-white">{item.designation}</p>
