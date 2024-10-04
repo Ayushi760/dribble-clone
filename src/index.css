@@ -4,8 +4,12 @@
 
 /* styles.css */
 @font-face {
-  font-family: 'Mona Sans';
-  src: url('../src/fonts/Mona-Sans.ttf') format('truetype');
+  font-family: 'Mona-Sans';
+  src: url('../src/fonts/Mona-Sans.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'source-serif-4';
+  src: url('../src/fonts/source-serif-4.woff2') format('woff2');
 }
 
 @tailwind base;
