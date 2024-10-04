@@ -20,7 +20,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className='h-full w-screen pt-[80px] flex items-center justify-center flex-col'>
+        <div className='h-full w-full pt-[80px] flex items-center justify-center flex-col'>
             <div
                 className='flex items-center justify-center rounded-full min-h-10 py-[10px] px-[16px] w-fit'
                 style={{

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import { GlobalStateProvider } from "./context/GlobalStateContext";
+import { GlobalStateContext, GlobalStateProvider } from "./context/GlobalStateContext";
 import Login from "./components/Login";
 import Register from "./components/Register";
 

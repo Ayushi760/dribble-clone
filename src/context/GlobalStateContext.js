@@ -12,6 +12,7 @@ const initialState = {
     : false,
   loading: false,
   error: null,
+  categories: []
 };
 
 // Define the reducer
@@ -43,6 +44,11 @@ const globalReducer = (state, action) => {
       return {
         ...state,
         error: action.payload,
+      };
+    case "SET_CATEGORIES": 
+      return { 
+        ...state, 
+        categories: action.payload 
       };
     default:
       return state;
