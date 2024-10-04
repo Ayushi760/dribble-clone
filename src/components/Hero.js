@@ -32,7 +32,7 @@ const Hero = () => {
                     Over 3 million ready-to-work creatives!
                 </div>
             </div>
-            <div className='flex items-center flex-col mx-10 max-w-[870px] text-center text-[72px] max-tablet:text-5xl leading-[76px] mt-[32px] mb-6 tracking-[2px]' style={{fontFamily:"source-serif-4"}}>
+            <div className='flex items-center flex-col mx-10 max-w-[870px] text-center text-[72px] max-tablet:text-5xl leading-[76px] mt-[32px] mb-6' style={{fontFamily:"source-serif-4"}}>
                 The world’s destination for design
             </div>
             <div className='text-[20px] max-tablet:text-[18px] text-center max-tablet:leading-[32px] px-6 leading-[36px] font-[500px]' style={{ fontFamily: "Mona-Sans" }}>

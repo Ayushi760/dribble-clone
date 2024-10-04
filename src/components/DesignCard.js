@@ -3,7 +3,6 @@ import { IoHeartOutline } from "react-icons/io5";
 import { LuBookmark } from "react-icons/lu";
 import { FaHeart } from "react-icons/fa";
 import { IoIosEye } from "react-icons/io";
-import DesignDetails from './DesignDetails';
 const DesignCard = ({ data }) => {
     return (
         <div className="relative w-[315px] h-[236px] bg-black rounded-lg group cursor-pointer">

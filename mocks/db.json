@@ -381,19 +381,21 @@
       "designs": [
         {
           "id": 16,
-          "title": "Children's Book Illustration",
+          "title": "Alta in Caerula - Bidder's Edition",
           "designer": {
-            "name": "Sophie Taylor",
-            "email": "sophie.taylor@example.com",
+            "name": "Angie Mathot",
+            "email": "angie@example.com",
             "isCompany": false,
-            "image": "https://example.com/images/sophie-taylor.jpg"
+            "image": "https://cdn.dribbble.com/users/3562273/avatars/normal/43144f024e2488897dd56b01c8c1cabb.jpg?1725397127g"
           },
-          "media":[],
-          "description": "An illustration for a children's book.",
+          "media":[
+            "https://cdn.dribbble.com/userupload/16897949/file/original-b7ff794d5c437eaa0f79efdf11d71f6b.jpg?crop=0x378-3000x2628&resize=400x300&vertical=center",
+            "https://cdn.dribbble.com/userupload/16644465/file/original-233a8a8cd494fcc6670ef27fe5897886.jpg?resize=1600x1600"
+          ],
+          "description": "Vector art. Bidder's edition for the Deep in the Blue collection..",
           "tags": [
-            "Illustration",
-            "Children",
-            "Book"
+            "Visual Designer",
+            "Vector Artist"
           ]
         },
         {
@@ -557,23 +559,25 @@
       ]
     },
     {
-      "name": "Animation",
+      "name": "Mobile",
       "designs": [
         {
           "id": 26,
-          "title": "2D Animation",
+          "title": "Crypto Wallet App",
           "designer": {
-            "name": "Animation Studios",
-            "email": "info@animationstudios.com",
-            "isCompany": true,
-            "logo": "https://example.com/images/animation-studios-logo.jpg"
+            "name": "Fahim",
+            "email": "info@fahim.com",
+            "isCompany": false,
+            "logo": "https://cdn.dribbble.com/users/5416798/avatars/normal/d6871427542beddd35d913feac441731.png?1720974506"
           },
-          "media": [],
-          "description": "A fun 2D animation for kids.",
+          "media": [
+            "https://cdn.dribbble.com/userupload/16895716/file/original-724c5da540f45562ea2cc399650cc8c2.png?resize=700x525&vertical=center",
+            "https://cdn.dribbble.com/userupload/16895718/file/original-fb525f8e62a0408f576819311d2d7b2b.png?resize=752x",
+            "https://cdn.dribbble.com/userupload/16895720/file/original-db769a45b2735f42b519e5d7ef8ffe3c.png?resize=752x"
+          ],
+          "description": "Take a look at the new design concept for the Crypto Wallet App. Thanks for your likes and comments!",
           "tags": [
-            "Animation",
-            "2D",
-            "Kids"
+            
           ]
         },
         {

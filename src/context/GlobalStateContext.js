@@ -1,9 +1,7 @@
 import React, { createContext, useReducer } from "react";
 
-// Create the context
 export const GlobalStateContext = createContext();
 
-// Define initial state
 const initialState = {
   users: [],
   currentUser: JSON.parse(localStorage.getItem("currentUser")) || null,
@@ -15,7 +13,6 @@ const initialState = {
   categories: []
 };
 
-// Define the reducer
 const globalReducer = (state, action) => {
   switch (action.type) {
     case "REGISTER":
@@ -55,7 +52,6 @@ const globalReducer = (state, action) => {
   }
 };
 
-// Create provider component
 export const GlobalStateProvider = ({ children }) => {
   const [state, dispatch] = useReducer(globalReducer, initialState);
 
