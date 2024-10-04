@@ -47,7 +47,7 @@ export const registerUser = async (fullname, username, email, password) => {
       throw new Error("Failed to register");
     }
 
-    return await postResponse.json(); // Return the registered user data
+    return await postResponse.json();
   } catch (error) {
     throw error; 
   }

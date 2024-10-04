@@ -3,7 +3,7 @@ import { GlobalStateContext } from "../context/GlobalStateContext";
 import wixIcon from "../assets/wixicon.svg"
 import googleIcon from "../assets/google.svg"
 import bcrypt from "bcryptjs";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { dispatch, state } = useContext(GlobalStateContext);
@@ -13,7 +13,7 @@ const Login = () => {
 
   useEffect(() => {
     if (state.isAuthenticated) {
-      navigate("/"); // Redirect to home page
+      navigate("/");
     }
   }, [state.isAuthenticated, navigate]);
 
@@ -22,11 +22,9 @@ const Login = () => {
     dispatch({ type: "SET_LOADING", payload: true });
 
     try {
-      // Fetch existing users
       const response = await fetch("http://localhost:3001/users");
       const users = await response.json();
 
-      // Find the user by username or email
       const user = users.find(
         (user) => user.username === identifier || user.email === identifier
       );
@@ -36,13 +34,11 @@ const Login = () => {
         const { password, ...userWithoutPassword } = user;
         dispatch({ type: "LOGIN", payload: userWithoutPassword });
 
-        // Reset form fields
         setIdentifier("");
         setPassword("");
 
-        // Redirect to home after 2000 ms
         setTimeout(() => {
-          navigate("/"); // Redirect to home page
+          navigate("/");
         }, 2000);
       } else {
         console.log("Invalid username/email or password");
