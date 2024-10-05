@@ -11,11 +11,10 @@ export const fetchArtists = async() =>{
 // Function to register a new user
 export const registerUser = async (fullname, username, email, password) => {
   try {
-    // Fetch existing users
     const response = await fetch("http://localhost:3001/users");
     const users = await response.json();
 
-    // Check for duplicate username or email
+    // Checking for duplicate username or email
     const isDuplicate = users.some(
       (user) => user.username === username || user.email === email
     );
@@ -26,7 +25,7 @@ export const registerUser = async (fullname, username, email, password) => {
     // Hash the password
     const hashedPassword = bcrypt.hashSync(password, 10);
 
-    // Create a new user object
+    // new user object
     const newUser = {
       id: users.length + 1,
       fullname,
@@ -35,7 +34,7 @@ export const registerUser = async (fullname, username, email, password) => {
       password: hashedPassword,
     };
 
-    // POST request to json-server
+    // request to json-server
     const postResponse = await fetch("http://localhost:3001/users", {
       method: "POST",
       headers: {
@@ -48,8 +47,8 @@ export const registerUser = async (fullname, username, email, password) => {
       throw new Error("Failed to register");
     }
 
-    return await postResponse.json(); // Return the registered user data
+    return await postResponse.json();
   } catch (error) {
-    throw error; // Rethrow the error to handle in the component
+    throw error; 
   }
 };

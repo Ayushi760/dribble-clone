@@ -5,6 +5,7 @@ import ArtistsSlider from '../components/ArtistsSlider'
 import ExploreDesigns from '../components/ExploreDesigns'
 import { GlobalStateContext } from '../context/GlobalStateContext'
 import CallToAction from '../components/CallToAction'
+import CategorySlider from '../components/CategorySlider'
 
 const Home = () => {
   const { dispatch } = useContext(GlobalStateContext);
@@ -29,6 +30,7 @@ const Home = () => {
         <ArtistsSlider/>
         <ExploreDesigns/>
         <CallToAction/>
+        <CategorySlider/>
     </div>
   )
 }
