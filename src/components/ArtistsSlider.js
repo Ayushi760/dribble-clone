@@ -14,9 +14,6 @@ const ArtistsSlider = () => {
         fetchAllArtist();
     }, []);
 
-    console.log(artists.map(item => item.image));
-
-
     const settings = {
         dots: false, 
         infinite: true, 

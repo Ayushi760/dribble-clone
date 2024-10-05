@@ -11,7 +11,7 @@ const DesignCard = ({ data }) => {
                 className='object-cover w-full h-full rounded-lg'
                 alt={data.title}
             />
-            <div className="absolute bottom-0 left-0 w-full transition-opacity duration-300 opacity-0 h-1/3 bg-gradient-to-t from-black to-transparent group-hover:opacity-100"></div>
+            <div className="absolute bottom-0 left-0 w-full transition-opacity duration-300 opacity-0 h-1/3 bg-gradient-to-t from-black to-transparent group-hover:opacity-100 group-hover:rounded-lg"></div>
             <div className="absolute bottom-0 left-0 flex items-center justify-between w-full p-4 mb-3 text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                 <h3 className="w-1/2 overflow-hidden text-sm font-semibold text-ellipsis whitespace-nowrap">{data.title}</h3>
                 <div className='flex justify-end w-1/2 gap-2'>

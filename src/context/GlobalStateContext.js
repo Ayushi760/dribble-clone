@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from "react";
+import React, { createContext, useEffect, useReducer } from "react";
 
 export const GlobalStateContext = createContext();
 
@@ -55,7 +55,7 @@ const globalReducer = (state, action) => {
 export const GlobalStateProvider = ({ children }) => {
   const [state, dispatch] = useReducer(globalReducer, initialState);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (state.currentUser) {
       localStorage.setItem("currentUser", JSON.stringify(state.currentUser));
     } else {

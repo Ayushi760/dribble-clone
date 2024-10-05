@@ -473,19 +473,23 @@
       "designs": [
         {
           "id": 21,
-          "title": "Smartwatch Design",
+          "title": "Sport Cars🏎️🔥",
           "designer": {
-            "name": "Innovatech",
-            "email": "info@innovatech.com",
-            "isCompany": true,
-            "logo": "https://example.com/images/innovatech-logo.jpg"
+            "name": "catalyst",
+            "email": "catalyst@example.com",
+            "isCompany": false,
+            "image": "https://cdn.dribbble.com/users/1787323/avatars/normal/386abe46684b97977de4ab3d4ee954d6.jpg?1584893831"
           },
-          "media":[],
-          "description": "A sleek smartwatch design.",
+         "media":[
+          "https://cdn.dribbble.com/userupload/16899681/file/original-c9a5a6486d668c016b609bf453ccd476.png?resize=320x240&vertical=center",
+          "https://cdn.dribbble.com/userupload/16899682/file/original-661bcb2c0327d7676ac35c0b3140f8bf.png?resize=752x",
+          "https://cdn.dribbble.com/userupload/16899683/file/original-0fa469907ed650e6424a4b3ef3abd7d8.png?resize=752x",
+          "https://cdn.dribbble.com/userupload/16899684/file/original-d7b187afdf39c7ee50c4b6943b95437c.png?resize=752x",
+          "https://cdn.dribbble.com/userupload/16899685/file/original-682430b73d40c3c82fc7f573751c2e6b.png?resize=752x"
+         ],
+          "description": "Need awesome illustrations and logos? just message me or email me for any project inquiries or commision works 😊",
           "tags": [
-            "Product Design",
-            "Tech",
-            "Wearable"
+            "we create beautiful stuff for your projects."
           ]
         },
         {
@@ -654,20 +658,22 @@
       "name": "Fashion Design",
       "designs": [
         {
-          "id": 31,
-          "title": "Summer Collection",
+          "id": 16,
+          "title": "Alta in Caerula - Bidder's Edition",
           "designer": {
-            "name": "Fashion House",
-            "email": "info@fashionhouse.com",
-            "isCompany": true,
-            "logo": "https://example.com/images/fashion-house-logo.jpg"
+            "name": "Angie Mathot",
+            "email": "angie@example.com",
+            "isCompany": false,
+            "image": "https://cdn.dribbble.com/users/3562273/avatars/normal/43144f024e2488897dd56b01c8c1cabb.jpg?1725397127g"
           },
-          "media": [],
-          "description": "A trendy summer collection of outfits.",
+          "media":[
+            "https://cdn.dribbble.com/userupload/16897949/file/original-b7ff794d5c437eaa0f79efdf11d71f6b.jpg?crop=0x378-3000x2628&resize=400x300&vertical=center",
+            "https://cdn.dribbble.com/userupload/16644465/file/original-233a8a8cd494fcc6670ef27fe5897886.jpg?resize=1600x1600"
+          ],
+          "description": "Vector art. Bidder's edition for the Deep in the Blue collection..",
           "tags": [
-            "Fashion",
-            "Collection",
-            "Summer"
+            "Visual Designer",
+            "Vector Artist"
           ]
         },
         {
@@ -745,20 +751,19 @@
       "designs": [
         {
           "id": 36,
-          "title": "Modern Living Room",
+          "title": "Carousel Visual Identity",
           "designer": {
-            "name": "Interior Creatives",
-            "email": "info@interiorcreatives.com",
+            "name": "Heyo",
+            "email": "info@Heyo.com",
             "isCompany": true,
-            "logo": "https://example.com/images/interior-creatives-logo.jpg"
+            "logo": "https://cdn.dribbble.com/users/414979/avatars/small/6a3fb4b20c29dce831a74dc7dbf591c4.png?1695741732"
           },
-          "media": [],
-          "description": "A stylish and modern living room design.",
-          "tags": [
-            "Interior Design",
-            "Living Room",
-            "Modern"
-          ]
+         "media":[
+          "https://cdn.dribbble.com/userupload/16902639/file/original-8004425e6a74da6fc8f64f7e22d2c6bc.png?resize=450x338&vertical=center",
+          "https://cdn.dribbble.com/userupload/16902640/file/original-2a4dcc33fca72fdc82fc1db1f6cbc03e.png?resize=752x"
+         ],
+          "description": "Excited to share the visual identity I worked on for Carousel. Carousel is a vehicle subscription service whose vision is for everyone to have access to a car. They believe cars symbolize freedom and everyone should have a path towards that. ",
+          "tags": []
         },
         {
           "id": 37,
