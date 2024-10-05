@@ -381,19 +381,21 @@
       "designs": [
         {
           "id": 16,
-          "title": "Children's Book Illustration",
+          "title": "Alta in Caerula - Bidder's Edition",
           "designer": {
-            "name": "Sophie Taylor",
-            "email": "sophie.taylor@example.com",
+            "name": "Angie Mathot",
+            "email": "angie@example.com",
             "isCompany": false,
-            "image": "https://example.com/images/sophie-taylor.jpg"
+            "image": "https://cdn.dribbble.com/users/3562273/avatars/normal/43144f024e2488897dd56b01c8c1cabb.jpg?1725397127g"
           },
-          "media":[],
-          "description": "An illustration for a children's book.",
+          "media":[
+            "https://cdn.dribbble.com/userupload/16897949/file/original-b7ff794d5c437eaa0f79efdf11d71f6b.jpg?crop=0x378-3000x2628&resize=400x300&vertical=center",
+            "https://cdn.dribbble.com/userupload/16644465/file/original-233a8a8cd494fcc6670ef27fe5897886.jpg?resize=1600x1600"
+          ],
+          "description": "Vector art. Bidder's edition for the Deep in the Blue collection..",
           "tags": [
-            "Illustration",
-            "Children",
-            "Book"
+            "Visual Designer",
+            "Vector Artist"
           ]
         },
         {
@@ -471,19 +473,23 @@
       "designs": [
         {
           "id": 21,
-          "title": "Smartwatch Design",
+          "title": "Sport Cars🏎️🔥",
           "designer": {
-            "name": "Innovatech",
-            "email": "info@innovatech.com",
-            "isCompany": true,
-            "logo": "https://example.com/images/innovatech-logo.jpg"
+            "name": "catalyst",
+            "email": "catalyst@example.com",
+            "isCompany": false,
+            "image": "https://cdn.dribbble.com/users/1787323/avatars/normal/386abe46684b97977de4ab3d4ee954d6.jpg?1584893831"
           },
-          "media":[],
-          "description": "A sleek smartwatch design.",
+         "media":[
+          "https://cdn.dribbble.com/userupload/16899681/file/original-c9a5a6486d668c016b609bf453ccd476.png?resize=320x240&vertical=center",
+          "https://cdn.dribbble.com/userupload/16899682/file/original-661bcb2c0327d7676ac35c0b3140f8bf.png?resize=752x",
+          "https://cdn.dribbble.com/userupload/16899683/file/original-0fa469907ed650e6424a4b3ef3abd7d8.png?resize=752x",
+          "https://cdn.dribbble.com/userupload/16899684/file/original-d7b187afdf39c7ee50c4b6943b95437c.png?resize=752x",
+          "https://cdn.dribbble.com/userupload/16899685/file/original-682430b73d40c3c82fc7f573751c2e6b.png?resize=752x"
+         ],
+          "description": "Need awesome illustrations and logos? just message me or email me for any project inquiries or commision works 😊",
           "tags": [
-            "Product Design",
-            "Tech",
-            "Wearable"
+            "we create beautiful stuff for your projects."
           ]
         },
         {
@@ -557,23 +563,25 @@
       ]
     },
     {
-      "name": "Animation",
+      "name": "Mobile",
       "designs": [
         {
           "id": 26,
-          "title": "2D Animation",
+          "title": "Crypto Wallet App",
           "designer": {
-            "name": "Animation Studios",
-            "email": "info@animationstudios.com",
-            "isCompany": true,
-            "logo": "https://example.com/images/animation-studios-logo.jpg"
+            "name": "Fahim",
+            "email": "info@fahim.com",
+            "isCompany": false,
+            "logo": "https://cdn.dribbble.com/users/5416798/avatars/normal/d6871427542beddd35d913feac441731.png?1720974506"
           },
-          "media": [],
-          "description": "A fun 2D animation for kids.",
+          "media": [
+            "https://cdn.dribbble.com/userupload/16895716/file/original-724c5da540f45562ea2cc399650cc8c2.png?resize=700x525&vertical=center",
+            "https://cdn.dribbble.com/userupload/16895718/file/original-fb525f8e62a0408f576819311d2d7b2b.png?resize=752x",
+            "https://cdn.dribbble.com/userupload/16895720/file/original-db769a45b2735f42b519e5d7ef8ffe3c.png?resize=752x"
+          ],
+          "description": "Take a look at the new design concept for the Crypto Wallet App. Thanks for your likes and comments!",
           "tags": [
-            "Animation",
-            "2D",
-            "Kids"
+            
           ]
         },
         {
@@ -650,20 +658,22 @@
       "name": "Fashion Design",
       "designs": [
         {
-          "id": 31,
-          "title": "Summer Collection",
+          "id": 16,
+          "title": "Alta in Caerula - Bidder's Edition",
           "designer": {
-            "name": "Fashion House",
-            "email": "info@fashionhouse.com",
-            "isCompany": true,
-            "logo": "https://example.com/images/fashion-house-logo.jpg"
+            "name": "Angie Mathot",
+            "email": "angie@example.com",
+            "isCompany": false,
+            "image": "https://cdn.dribbble.com/users/3562273/avatars/normal/43144f024e2488897dd56b01c8c1cabb.jpg?1725397127g"
           },
-          "media": [],
-          "description": "A trendy summer collection of outfits.",
+          "media":[
+            "https://cdn.dribbble.com/userupload/16897949/file/original-b7ff794d5c437eaa0f79efdf11d71f6b.jpg?crop=0x378-3000x2628&resize=400x300&vertical=center",
+            "https://cdn.dribbble.com/userupload/16644465/file/original-233a8a8cd494fcc6670ef27fe5897886.jpg?resize=1600x1600"
+          ],
+          "description": "Vector art. Bidder's edition for the Deep in the Blue collection..",
           "tags": [
-            "Fashion",
-            "Collection",
-            "Summer"
+            "Visual Designer",
+            "Vector Artist"
           ]
         },
         {
@@ -741,20 +751,19 @@
       "designs": [
         {
           "id": 36,
-          "title": "Modern Living Room",
+          "title": "Carousel Visual Identity",
           "designer": {
-            "name": "Interior Creatives",
-            "email": "info@interiorcreatives.com",
+            "name": "Heyo",
+            "email": "info@Heyo.com",
             "isCompany": true,
-            "logo": "https://example.com/images/interior-creatives-logo.jpg"
+            "logo": "https://cdn.dribbble.com/users/414979/avatars/small/6a3fb4b20c29dce831a74dc7dbf591c4.png?1695741732"
           },
-          "media": [],
-          "description": "A stylish and modern living room design.",
-          "tags": [
-            "Interior Design",
-            "Living Room",
-            "Modern"
-          ]
+         "media":[
+          "https://cdn.dribbble.com/userupload/16902639/file/original-8004425e6a74da6fc8f64f7e22d2c6bc.png?resize=450x338&vertical=center",
+          "https://cdn.dribbble.com/userupload/16902640/file/original-2a4dcc33fca72fdc82fc1db1f6cbc03e.png?resize=752x"
+         ],
+          "description": "Excited to share the visual identity I worked on for Carousel. Carousel is a vehicle subscription service whose vision is for everyone to have access to a car. They believe cars symbolize freedom and everyone should have a path towards that. ",
+          "tags": []
         },
         {
           "id": 37,

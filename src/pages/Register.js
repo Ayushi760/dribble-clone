@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { GlobalStateContext } from "../context/GlobalStateContext";
 import wixIcon from "../assets/wixicon.svg"
 import googleIcon from "../assets/google.svg"
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../api/api";
 
 const Register = () => {
@@ -12,49 +12,40 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
-    const [successMessage, setSuccessMessage] = useState(""); // New state for success message
-    const navigate = useNavigate(); // Initialize navigate
+    const [successMessage, setSuccessMessage] = useState(""); 
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         if (state.isAuthenticated) {
-            navigate("/"); // Redirect to home page
+            navigate("/");
         }
     }, [state.isAuthenticated, navigate]);
 
     const handleRegister = async (e) => {
         e.preventDefault();
-
-        // Reset error message and success message
         setErrorMessage("");
         setSuccessMessage("");
 
-        // Set loading to true
         dispatch({ type: "SET_LOADING", payload: true });
 
         try {
-            // Call the register API
             const savedUser = await registerUser(fullname, username, email, password);
 
-            // Dispatch action to store in global state
             dispatch({ type: "REGISTER", payload: savedUser });
 
-            // Set success message
             setSuccessMessage("Registration successful!");
 
-            // Reset form fields
             setFullname("");
             setUsername("");
             setEmail("");
             setPassword("");
 
-            // Redirect to login after 2000 ms
             setTimeout(() => {
-                navigate("/login"); // Redirect to login page
+                navigate("/login");
             }, 2000);
         } catch (error) {
-            setErrorMessage(error.message); // Display error message
+            setErrorMessage(error.message);
         } finally {
-            // Set loading to false
             dispatch({ type: "SET_LOADING", payload: false });
         }
     };
