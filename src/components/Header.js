@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <div
       style={{ fontFamily: "Mona-Sans" }}
-      className="grid grid-cols-[1fr_96px_1fr] max-laptop:grid-cols-[90px_1fr_auto] max-laptop_sm:grid-cols-[20px_90px_1fr] max-laptop:gap-[24px] gap-[40px] px-10 h-[100px] justify-center items-center bg-[#f8f7f4] relative"
+      className="grid grid-cols-[1fr_96px_1fr] max-laptop:grid-cols-[90px_1fr_auto] max-laptop_sm:grid-cols-[20px_90px_1fr] max-laptop:gap-[24px] gap-[40px] px-10 h-[100px] justify-center items-center bg-[#f8f7f4] relative w-full"
     >
       {openMenu ? (
         <img

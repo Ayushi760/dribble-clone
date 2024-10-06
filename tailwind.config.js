@@ -9,6 +9,7 @@ module.exports = {
         laptop:'1025px',
         laptop_sm:'950px',
         tablet:'768px',
+        tablet_sm:'650px',
         mobile:'425px'
       }     
     },

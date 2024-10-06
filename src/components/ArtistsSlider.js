@@ -57,7 +57,7 @@ const ArtistsSlider = () => {
     };
 
     return (
-        <div className="py-[72px] overflow-hidden " style={{ fontFamily: "Mona-Sans" }}> 
+        <div className="py-[72px] overflow-hidden w-full" style={{ fontFamily: "Mona-Sans" }}> 
             <Slider {...settings} className='w-auto'>
                 {artists.map((item,index) => (
                     <div

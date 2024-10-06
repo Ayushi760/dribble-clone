@@ -2,7 +2,7 @@ import React from "react";
 
 const CallToAction = () => {
   return (
-    <div className="py-[120px] bg-[#ffda79] text-center">
+    <div className="py-[120px] bg-[#ffda79] text-center w-full">
       <div className="flex flex-col items-center justify-center gap-6 px-8">
         <h2 class="max-w-[620px] mx-auto text-[64px] leading-[72px] font-normal" style={{fontFamily:"source-serif-4"}}>
           Find your next designer today

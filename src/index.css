@@ -16,3 +16,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow-x: hidden;
+}
+
+.slick-list{
+  padding-top: 14px;
+  padding-bottom: 30px;
+}

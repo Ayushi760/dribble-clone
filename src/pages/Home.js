@@ -6,6 +6,7 @@ import ExploreDesigns from '../components/ExploreDesigns'
 import { GlobalStateContext } from '../context/GlobalStateContext'
 import CallToAction from '../components/CallToAction'
 import CategorySlider from '../components/CategorySlider'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const { dispatch } = useContext(GlobalStateContext);
@@ -24,13 +25,14 @@ const Home = () => {
     fetchCategories();
   }, [dispatch]);
   return (
-    <div className='bg-[#f8f7f4] '>
+    <div className='bg-[#f8f7f4] flex flex-col items-center w-screen'>
         <Header/>
         <Hero/>
         <ArtistsSlider/>
         <ExploreDesigns/>
         <CallToAction/>
         <CategorySlider/>
+        <Footer/>
     </div>
   )
 }
