@@ -155,7 +155,7 @@ const Header = () => {
             {state?.currentUser?.fullname?.split("")[0] ||
               state?.currentUser?.username?.split("")[0]}
 
-            <div className="absolute top-full right-0 w-[320px] pt-7 -translate-y-[10px] hidden group-hover:block cursor-auto">
+            <div className="absolute top-full right-0 w-[320px] pt-7 -translate-y-[10px] hidden group-hover:block cursor-pointer z-10">
               <div className="border border-solid border-[#f3f3f4] rounded-2xl bg-white shadow-sm p-8 w-full flex flex-col items-center justify-center gap-3">
                 <div className="relative flex items-center justify-center w-20 h-20 text-4xl font-medium leading-none text-white bg-gray-900 rounded-full cursor-pointer">
                   {state?.currentUser?.fullname?.split("")[0] ||

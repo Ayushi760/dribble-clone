@@ -13,7 +13,7 @@ const Login = () => {
 
   useEffect(() => {
     if (state.isAuthenticated) {
-      navigate("/");
+      navigate("/dashboard");
     }
   }, [state.isAuthenticated, navigate]);
 
@@ -38,7 +38,7 @@ const Login = () => {
         setPassword("");
 
         setTimeout(() => {
-          navigate("/");
+          navigate("/dashboard");
         }, 2000);
       } else {
         console.log("Invalid username/email or password");
