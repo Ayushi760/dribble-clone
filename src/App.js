@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { GlobalStateContext, GlobalStateProvider } from "./context/GlobalStateContext";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
 import { useContext, useEffect } from "react";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import { Toaster } from "react-hot-toast";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
   const { dispatch } = useContext(GlobalStateContext);
@@ -30,6 +31,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <Toaster/>
     </BrowserRouter>
   );
 }

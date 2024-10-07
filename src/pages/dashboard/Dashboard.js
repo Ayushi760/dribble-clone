@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import DesignCard from "../components/DesignCard";
-import { GlobalStateContext } from "../context/GlobalStateContext";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import DesignCard from "../../components/DesignCard";
+import { GlobalStateContext } from "../../context/GlobalStateContext";
 import { IoChevronDown } from "react-icons/io5";
 import { IoFilter } from "react-icons/io5";
-import DesignDetails from "../components/DesignDetails";
-import withAuth from "../components/HOCs/authHOC";
+import DesignDetails from "../../components/DesignDetails";
+import withAuth from "../../components/HOCs/authHOC";
 
 const Dashboard = () => {
   const { state } = useContext(GlobalStateContext);

@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { GlobalStateContext } from "../context/GlobalStateContext";
-import wixIcon from "../assets/wixicon.svg"
-import googleIcon from "../assets/google.svg"
+import { GlobalStateContext } from "../../context/GlobalStateContext";
+import wixIcon from "../../assets/wixicon.svg"
+import googleIcon from "../../assets/google.svg"
 import bcrypt from "bcryptjs";
 import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const { dispatch, state } = useContext(GlobalStateContext);
@@ -36,7 +37,7 @@ const Login = () => {
 
         setIdentifier("");
         setPassword("");
-
+        toast.success("Login Successful!")
         setTimeout(() => {
           navigate("/dashboard");
         }, 2000);
@@ -83,25 +84,32 @@ const Login = () => {
           </div>
           <form onSubmit={handleLogin}>
             <div className=" mt-[14px] mb-[4px] w-full">
-              <p className="text-[15px] font-bold text-[#0c0c21] mb-2">Username or Email</p>
-              <input
-                className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
-                type="text"
-                value={identifier}
-                onChange={(e) => setIdentifier(e.target.value)}
-                required
-              />
+              <label className="text-[15px] font-bold text-[#0c0c21] mb-2">
+                Username or Email
+                <input
+                  className="w-full p-4 font-normal text-gray-900 bg-white border border-gray-200 outline-none h-14 rounded-xl"
+                  type="text"
+                  value={identifier}
+                  onChange={(e) => setIdentifier(e.target.value)}
+                  required
+                  aria-label="Username or Email" // You can also use this for testing
+                />
+              </label>
             </div>
-            <div className=" mt-[14px] mb-[4px] w-full">
-              <p className="text-[15px] font-bold text-[#0c0c21] mb-2">Password</p>
-              <input
-                className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
+            <div className="mt-[14px] mb-[4px] w-full">
+              <label className="text-[15px] font-bold text-[#0c0c21] mb-2">
+                Password
+                <input
+                  className="w-full p-4 text-gray-900 bg-white border border-gray-200 outline-none h-14 rounded-xl"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  aria-label="Password"
+                />
+              </label>
             </div>
+
             <button className="w-full bg-[#0c0c21] rounded-[100px] font-semibold text-white mt-5 h-14" type="submit">Sign in</button>
           </form>
           <p className="text-[#3d3b4e] text-center mt-5 text-sm">Dont't have an account? <Link to="/register" className="underline">Sign up</Link></p>

@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { GlobalStateContext } from "../context/GlobalStateContext";
-import wixIcon from "../assets/wixicon.svg"
-import googleIcon from "../assets/google.svg"
+import { GlobalStateContext } from "../../context/GlobalStateContext";
+import wixIcon from "../../assets/wixicon.svg"
+import googleIcon from "../../assets/google.svg"
 import { Link, useNavigate } from "react-router-dom";
-import { registerUser } from "../api/api";
+import { registerUser } from "../../api/api";
+import toast from "react-hot-toast";
 
 const Register = () => {
     const { dispatch, state } = useContext(GlobalStateContext);
@@ -12,8 +13,8 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
-    const [successMessage, setSuccessMessage] = useState(""); 
-    const navigate = useNavigate(); 
+    const [successMessage, setSuccessMessage] = useState("");
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (state.isAuthenticated) {
@@ -39,7 +40,7 @@ const Register = () => {
             setUsername("");
             setEmail("");
             setPassword("");
-
+            toast.success("Registration Successfully!")
             setTimeout(() => {
                 navigate("/login");
             }, 2000);
@@ -84,50 +85,58 @@ const Register = () => {
                     <form onSubmit={handleRegister}>
                         <div className="flex w-full gap-4">
                             <div className=" mt-[14px] mb-[4px] w-full">
-                                <p className="text-[15px] font-bold text-[#0c0c21] mb-2">Name</p>
-                                <input
-                                    className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
-                                    type="text"
-                                    value={fullname}
-                                    onChange={(e) => setFullname(e.target.value)}
-                                    required
-                                />
+                                <label className="text-[15px] text-[#0c0c21] mb-2">
+                                    Name
+                                    <input
+                                        className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
+                                        type="text"
+                                        value={fullname}
+                                        onChange={(e) => setFullname(e.target.value)}
+                                        required
+                                    />
+                                </label>
                             </div>
                             <div className=" mt-[14px] mb-[4px] w-full">
-                                <p className="text-[15px] font-bold text-[#0c0c21] mb-2">Username</p>
-                                <input
-                                    className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
-                                    type="text"
-                                    value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
-                                    required
-                                />
+                                <label className="text-[15px] text-[#0c0c21] mb-2">
+                                    Username
+                                    <input
+                                        className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
+                                        type="text"
+                                        value={username}
+                                        onChange={(e) => setUsername(e.target.value)}
+                                        required
+                                    />
+                                </label>
                             </div>
                         </div>
                         <div className=" mt-[14px] mb-[4px] w-full">
-                            <p className="text-[15px] font-bold text-[#0c0c21] mb-2">Email</p>
-                            <input
-                                className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                            />
+                            <label className="text-[15px] text-[#0c0c21] mb-2">
+                                Email
+                                <input
+                                    className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
+                            </label>
                         </div>
                         <div className=" mt-[14px] mb-[4px] w-full">
-                            <p className="text-[15px] font-bold text-[#0c0c21] mb-2">Password</p>
+                            <label className="text-[15px] text-[#0c0c21] mb-2">
+                            Password
                             <input
                                 className="h-14 p-4 w-full border border-gray-200 rounded-xl outline-none bg-white text-gray-900 transition duration-300 ease-in-out hover:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:shadow-[0_0_0_4px_rgba(234,76,137,0.1)] focus:border-pink-300"
-                                type=""
+                                type="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
                                 min={6}
                                 placeholder="6+ Characters"
                             />
+                            </label>
                         </div>
                         <div className=" mt-[14px] mb-[4px] w-full flex gap-2">
-                            <input type="checkbox" id="agree" required/>
+                            <input type="checkbox" id="agree" required />
                             <p className="text-sm text-gray-700">I agree with Dribbble's Terms of Service, Privacy Policy, and default Notification Settings.</p>
                         </div>
                         <button className="w-full bg-[#0c0c21] rounded-[100px] font-semibold text-white mt-5 h-14" type="submit">Create Account</button>
